@@ -4,7 +4,7 @@ droidcat --in F-Droid.apk,LineageOS-2020-miatoll.zip --select-by-name="Lineage" 
 
 droidcat --in F-Droid.apk --structure-model="APKTOOL" --script=decode.dsc --output="fdroid" --max-thread=6 --max-host-memory=2Mb
 
-droidcat --in F-Droid.apk --structure-model="APKTOOL" --script=decode.dsc --output-in-memory --max-thread=6 --max-host-memory=2Mb --perform-operation="%copy% somefile.txt $output:lib/*/"
+droidcat --in F-Droid.apk --structure-model="APKTOOL" --script=decode.dsc --output-in-memory --max-thread=6 --max-host-memory=2Mb --perform-operation="%copy% some_file.txt $output:lib/*/"
 
 droidcat --in F-Droid.apk --m 1 --use-engine="spyware-aaa" --display-file-info --display-api-name --display-package-name --display-required-permissions --test-for-antifeatures
 
